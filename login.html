@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div >
+        <h2>User Login</h2>
+        <form action="welcome.html" name="form" class="loginform" method="post" onsubmit="return login()">
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email" autocomplete="off" >
+            <div id="email_error">Please enter a valid email or phone number</div>
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" >
+            <div id="pass_error">Please enter the password with minimum 6 characters</div>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
